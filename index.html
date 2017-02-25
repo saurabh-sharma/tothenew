@@ -5,11 +5,68 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <div class="logo"></div>
-            <div></div>
+            <div class="logo"><img src="assets/images/logo.png"></div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Movie</a></li>
+                        <li><a href="#">TV</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">More</a> <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            <ul class="submenu">
+                                <li><a href="#">LINK 1</a></li>
+                                <li><a href="#">LINK 2</a></li>
+                                <li><a href="#">LINK 3</a></li>
+                                <li><a href="#">LINK 4</a></li>
+                                <li><a href="#">LINK 5</a></li>
+                            </ul>
+                        </li>
+                        <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
+        <article class="carousel">
+            <div class="nav arr-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+            <div class="nav arr-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+            <section class="background"></section>
+            <section class="movie">
+                <div class="poster"></div>
+                <div class="movie-details">
+                    <h4>Watch Movie</h4>
+                    <h1>The Hangover Part II <span class="hd">HD</span></h1> 
+                    <hr>
+                    <ul>
+                        <li>Movie</li>
+                        <li>Comedy</li>
+                        <li>2014</li>
+                        <li>180 mins</li>
+                        <li>PG</li>
+                    </ul>
+                    <hr>
+                    <div class="rate-share">
+                        <div class="rating"><i class="fa fa-star rated" aria-hidden="true"></i><i class="fa fa-star rated" aria-hidden="true"></i><i class="fa fa-star rated" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="share"></div>
+                    </div>
+                    <br>
+                    <p>The Hangover Part II is a 2011 American comedy film produced by Legendary Pictures and distributed by Warner Bros. Pictures. It is the sequel to 2009's The Hangover and the second film in The Hangover franchise.</p>
+                    <p>Initial release: May 26, 2011 (USA)</p>
+                    <p>Director: Todd Phillips</p>
+                    <p>Prequel: The Hangover</p>
+                    <p>Sequel: The Hangover Part III</p>
+                    <button class="play"><i class="fa fa-play" aria-hidden="true"></i> Watch Now</button>
+                </div>
+
+                
+            </section>
+            
+        </article>
+        <footer></footer>
     </body>
 </html>

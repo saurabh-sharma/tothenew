@@ -3,7 +3,136 @@ html, body {
   padding: 0px; }
 
 header {
-  padding: 40px;
-  background: #ed1c24; }
+  background: #ed1c24;
+  display: flex;
+  padding: 0px 100px; }
+  header .logo {
+    width: 35%;
+    padding: 20px 0px; }
+  header .menu {
+    width: 65%; }
+    header .menu nav {
+      float: right;
+      display: block;
+      height: 100%; }
+    header .menu .submenu {
+      display: none; }
+    header .menu ul {
+      list-style: none;
+      margin: 0px; }
+      header .menu ul li {
+        font-family: sans-serif;
+        color: #fff;
+        float: left;
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 45px 20px; }
+        header .menu ul li:hover {
+          background: #fff; }
+          header .menu ul li:hover a {
+            color: #ed1c24; }
+          header .menu ul li:hover i {
+            color: #ed1c24; }
+        header .menu ul li a {
+          color: #fff;
+          text-decoration: none; }
+
+.carousel .background {
+  min-height: 550px;
+  background: url("../images/movie-poster.jpg") no-repeat;
+  background-size: cover;
+  filter: blur(50px);
+  overflow: hidden;
+  padding: 0px 100px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: -1; }
+.carousel .movie {
+  min-height: 550px;
+  overflow: hidden;
+  padding: 0px 100px;
+  background-color: rgba(242, 194, 249, 0.23); }
+  .carousel .movie .poster {
+    margin: 20px 0px;
+    float: left;
+    width: 50%;
+    height: 550px;
+    background: url("../images/movie-poster.jpg") no-repeat; }
+  .carousel .movie .movie-details {
+    float: left;
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    width: 50%; }
+    .carousel .movie .movie-details .hd {
+      background: #ffcc33;
+      border-radius: 2px;
+      padding: 2px;
+      font-size: 16px; }
+    .carousel .movie .movie-details ul {
+      text-decoration: none;
+      list-style: none;
+      padding-left: 0px;
+      width: 100%;
+      float: left;
+      margin: 0; }
+      .carousel .movie .movie-details ul li {
+        float: left;
+        padding: 2px 5px;
+        border-left: 1px solid #fff; }
+        .carousel .movie .movie-details ul li:first-child {
+          border-left: 0px; }
+    .carousel .movie .movie-details h1 {
+      font-size: 32px; }
+    .carousel .movie .movie-details h4 {
+      font-size: 16px; }
+    .carousel .movie .movie-details p {
+      font-size: 13px; }
+    .carousel .movie .movie-details .rate-share {
+      width: 100%; }
+      .carousel .movie .movie-details .rate-share .rating {
+        width: 50%;
+        float: left; }
+        .carousel .movie .movie-details .rate-share .rating .rated {
+          color: #ffcc33; }
+      .carousel .movie .movie-details .rate-share .share {
+        width: 50%;
+        float: right; }
+    .carousel .movie .movie-details .play {
+      background: #ed1c24;
+      padding: 10px 40px;
+      color: #fff;
+      font-size: 14px; }
+.carousel .nav {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  height: 550px; }
+.carousel .nav.arr-right {
+  right: 0px;
+  font-size: 70px;
+  font-weight: 100;
+  color: #fff;
+  padding-right: 20px; }
+  .carousel .nav.arr-right i {
+    float: right;
+    margin-top: 225px; }
+.carousel .nav.arr-left {
+  left: 0px;
+  font-size: 70px;
+  font-weight: 100;
+  color: #fff;
+  padding-left: 20px; }
+  .carousel .nav.arr-left i {
+    float: left;
+    margin-top: 225px; }
+
+footer {
+  background: #0f1426;
+  padding: 20px; }
 
 /*# sourceMappingURL=style.css.map */
